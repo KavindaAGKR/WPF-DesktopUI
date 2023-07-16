@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "u/8zAkSe7JHgR1BcewUUn5E68Jkq/5vI4DnWMVz8IvksZ2S1N8xp0jEE3qMMDgPOYLOyCSwbxHeiigffJv3qCw==",
+  "success": true,
+  "projectFilePath": "C:\\StudentList\\StudentListUI\\StudentListUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0-preview1\\communitytoolkit.mvvm.8.2.0-preview1.nupkg.sha512"
+  ],
+  "logs": []
+}

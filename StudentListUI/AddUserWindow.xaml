@@ -1,0 +1,52 @@
+﻿<Window x:Class="StudentListUI.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentListUI"
+        mc:Ignorable="d"
+         WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent" AllowsTransparency="True"
+        Title="{Binding Title,UpdateSourceTrigger=PropertyChanged}" Height="400" Width="500">
+    <Window.DataContext>
+        <local:AddUserVM/>
+    </Window.DataContext>
+
+    <Border BorderBrush="Black" BorderThickness="2" CornerRadius="30" Background="#C0C0C0">
+    <Grid Height="400" Width="Auto"    >
+        <Button BorderBrush="Transparent" Background="Transparent" Width="30" Height="30" Margin="450,0,0,350" Command="{Binding ExitCommand}">
+            <Image Source=" C:\Users\User\Desktop\Group Final\MyApp\Models\Images/cross.png " />
+        </Button>
+        <TextBlock Text="Add a New Student" HorizontalAlignment="Center" Margin="0,20,0,0"
+                   Foreground="DarkBlue" FontSize="18" FontWeight="Medium"/>
+
+        <StackPanel Width="150" Height="Auto" Margin="30,60,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" >
+
+            
+
+            <TextBlock FontSize="13" Text="Registration Number:" Height="20" Margin="0,10,0,0" Grid.Row="1"/>
+            <TextBlock FontSize="13" Text="First Name:" Height="20" Margin="0,10,0,0"/>
+            <TextBlock FontSize="13" Text="Last Name:" Height="20" Margin="0,10,0,0"/>
+            <TextBlock FontSize="13" Text="Date of Birth:" Height="20" Margin="0,10,0,0"/>
+            <TextBlock FontSize="13" Text="GPA Value:" Height="20" Margin="0,10,0,0"/>
+
+            <Button Content="Upload a Photo" Margin="0,30,0,0" Width="150" Height="40" HorizontalAlignment="Left" Command="{Binding UploadPhotoCommand}" Style="{StaticResource Adduserbutton}" />
+
+
+        </StackPanel>
+        
+        
+        <StackPanel Width="290" Height="Auto" Margin="0,60,30,0" VerticalAlignment="Top" HorizontalAlignment="Right" >
+            <TextBox Text="{Binding Regno, UpdateSourceTrigger=PropertyChanged}" Margin="0,10,0,0"  Height="20"/>
+            <TextBox Text="{Binding Firstname, UpdateSourceTrigger=PropertyChanged}" Margin="0,10,0,0" Height="20"/>
+            <TextBox Text="{Binding Lastname, UpdateSourceTrigger=PropertyChanged}" Margin="0,10,0,0" Height="20"/>
+            <TextBox Text="{Binding Dateofbirth, UpdateSourceTrigger=PropertyChanged}" Margin="0,10,0,0" Height="20"/>
+            <TextBox Text="{Binding Gpa, UpdateSourceTrigger=PropertyChanged}" Margin="0,10,0,0" Height="20"/>
+            
+        </StackPanel>
+        <Button Content="Save" Command="{Binding SaveCommand}" Margin="0,0,0,50" Width="150" VerticalAlignment="Bottom" Style="{StaticResource Adduserbutton}" />
+
+    </Grid>
+    </Border>
+</Window>

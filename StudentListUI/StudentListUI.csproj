@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Model\Images\1.png" />
+    <None Remove="Model\Images\2.png" />
+    <None Remove="Model\Images\3.png" />
+    <None Remove="Model\Images\3d-wallpaper-widescreen.jpg" />
+    <None Remove="Model\Images\4.png" />
+    <None Remove="Model\Images\5.png" />
+    <None Remove="Model\Images\6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0-preview1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Model\Images\1.png" />
+    <Resource Include="Model\Images\2.png" />
+    <Resource Include="Model\Images\3.png" />
+    <Resource Include="Model\Images\4.png" />
+    <Resource Include="Model\Images\5.png" />
+    <Resource Include="Model\Images\6.png" />
+  </ItemGroup>
+
+</Project>
